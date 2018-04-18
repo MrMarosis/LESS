@@ -149,25 +149,25 @@ def main():
     if(len(sys.argv)==1):
         print("No argument provided")
     else:
-        print(sys.argv)
+        #print(sys.argv)
         args = [char for arg in sys.argv[1:] for char in arg]
-        print(args)
+        #print(args)
         if validate_expresion(args):
             rpn = parse_to_rpn(args)
-            print(rpn)
+            #print(rpn)
 
             vars = sorted(set(list(filter(lambda x: x not in __operators and
                                          x not in ('1', '0'), rpn))))
             true_sequences = get_true_value_sequences(rpn,vars)
-            print(true_sequences)
+            #print(true_sequences)
 
             result = quine_mccluskey(true_sequences,[],len(vars))
-            print(result)
+            #print(result)
 
             simplified_expression = gen_result_string(result,vars)
-            print(simplified_expression)
+            #print(simplified_expression)
         else:
-            print("Wrong input acceptable operators: ",__operators,
+            #print("Wrong input acceptable operators: ",__operators,
                   "\nacceptable values: ",__operators)
 
 
