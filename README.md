@@ -1,5 +1,5 @@
-# Simplify
+# LESS
 
 ## Make Your Life Simpler!
-The goal of this project was to create small script designed for simplifing logical expression.
 
+**L**ogical **E**xpression **S**implify **S**cript is a small project aimed at creation of a tool designed for simplifying logical expressions.
